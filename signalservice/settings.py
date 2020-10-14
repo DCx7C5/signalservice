@@ -76,10 +76,15 @@ WSGI_APPLICATION = 'signalservice.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'signalservice',
+        'USER': 'signaluser',
+        'PASSWORD': 'hsv4ever!',
+        'HOST': '136.244.83.102',
+        'PORT': '5432',
     }
 }
+
 
 
 # Password validation
